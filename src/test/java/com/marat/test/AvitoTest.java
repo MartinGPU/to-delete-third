@@ -5,6 +5,7 @@ import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.sleep;
 
@@ -22,5 +23,10 @@ public class AvitoTest {
         $(".top-rubricator-rubricatorButton-SoKyQ").click();
         sleep(2000);
         $("[data-marker = 'top-rubricator/root-category-26195']").hover();
+        $(byText("Рации")).click();
+        $(".input-input-Zpzc1").setValue("Motorolla");
+        sleep(2000);
+        $(".desktop-9uhrzn").click();
+        sleep(2000);
     }
 }
