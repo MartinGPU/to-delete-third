@@ -15,7 +15,7 @@ public class AvitoTest {
     public static void beforeAll() {
         Configuration.browserSize = "1366x768";
     }
-
+    @AllureId("200390")
     @Test
     public void testForGit() {
         Selenide.open("https://www.avito.ru/");
